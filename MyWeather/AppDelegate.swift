@@ -13,11 +13,10 @@ import GooglePlaces
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let googleMapsApiKey = "AIzaSyBRLpvu5vetpM8uqyn3P62TclQSyiY3a3M"
-
+    let googleMapsApiKey = "GOOGLE_API_KEY"
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey(googleMapsApiKey)
-        GMSPlacesClient.provideAPIKey("AIzaSyBIMPWXWub9zkMOBrKcqnwLySygey2CFg8")
+        GMSPlacesClient.provideAPIKey("GOOGLE_API_KEY")
         
         return true
     }
